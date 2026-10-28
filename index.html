@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Osman Mohamed Abdel-Gawad - Programming & Web Development Instructor | Front-End Developer. Helping beginners master HTML, CSS, JavaScript and build real websites." />
+  <meta name="keywords" content="Programming Instructor, Web Development, Front-End Developer, HTML, CSS, JavaScript, Teaching, Portfolio" />
+  <meta name="author" content="Osman Mohamed Abdel-Gawad" />
+  <title>Osman Mohamed Abdel-Gawad | Programming & Web Development Instructor</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text"><img class="osman" src="image.png" alt="OM"></span>
+      </a>
+      
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+          <li class="nav-item nav-item-book">
+            <button type="button" class="nav-book-link" id="open-booking-mobile">
+              <i class="fas fa-graduation-cap"></i>
+              <span data-i18n="btn_book">Book Course</span>
+            </button>
+          </li>
+        </ul>
+        <div class="nav-close" id="nav-close"><i class="fas fa-times"></i></div>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn-book" id="open-booking" type="button">
+          <i class="fas fa-graduation-cap"></i>
+          <span data-i18n="btn_book">Book Course</span>
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <i class="fas fa-globe"></i>
+          <span id="lang-label">AR</span>
+        </button>
+        <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="hero_badge">Available for Training & Projects</span>
+          </div>
+          <h1 class="hero-title">
+            Osman Mohamed<br />
+            <span class="gradient-text">Abdel-Gawad</span>
+          </h1>
+          <h2 class="hero-subtitle" data-i18n="hero_subtitle">Programming & Web Development Instructor</h2>
+          <p class="hero-description" data-i18n="hero_desc">
+            Programming Instructor passionate about simplifying web development and helping beginners turn their ideas into real websites.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span data-i18n="btn_projects">View My Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span data-i18n="btn_contact">Contact Me</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://wa.me/201032299708" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/thmanmhmdbdaljwad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/osman-mohammed-450b14393/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/osman_mohammed666?igsi=Y3l5eTYzMzhiZDQy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:123asmana@gmail.com" class="social-link" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <div class="hero-image-frame">
+            <img src="image.png" alt="Osman Mohamed Abdel-Gawad - Programming Instructor" class="hero-image" />
+          </div>
+          <div class="hero-floating-card hero-card-1">
+            <i class="fas fa-code"></i>
+            <span data-i18n="float_frontend">Front-End</span>
+          </div>
+          <div class="hero-floating-card hero-card-2">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span data-i18n="float_instructor">Instructor</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll to About"><div class="mouse"><div class="wheel"></div></div></a>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="about_tag">About Me</span>
+          <h2 class="section-title">
+            <span data-i18n="about_title_1">Passionate About</span> <span class="gradient-text" data-i18n="about_title_2">Teaching & Code</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="about_subtitle">Helping beginners transform ideas into real, working websites</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p data-i18n="about_p1">I'm <strong>Osman Mohamed Abdel-Gawad</strong>, a Programming & Web Development Instructor and Front-End Developer dedicated to making programming accessible, practical, and enjoyable.</p>
+            <p data-i18n="about_p2">My passion lies in teaching programming in a simple and practical way. I specialize in helping beginners understand core concepts and build complete websites from scratch using modern technologies.</p>
+            <p data-i18n="about_p3">Through educational content, hands-on training sessions, and personalized guidance, I empower students to gain real skills in HTML, CSS, JavaScript, and modern web development practices.</p>
+            <div class="about-highlights">
+              <div class="highlight-item"><i class="fas fa-laptop-code"></i><span data-i18n="hl_programming">Programming</span></div>
+              <div class="highlight-item"><i class="fas fa-globe"></i><span data-i18n="hl_web">Web Development</span></div>
+              <div class="highlight-item"><i class="fas fa-chalkboard-teacher"></i><span data-i18n="hl_teaching">Teaching</span></div>
+              <div class="highlight-item"><i class="fas fa-paint-brush"></i><span data-i18n="hl_frontend">Front-End Development</span></div>
+              <div class="highlight-item"><i class="fas fa-user-graduate"></i><span data-i18n="hl_beginners">Helping Beginners</span></div>
+              <div class="highlight-item"><i class="fas fa-book-open"></i><span data-i18n="hl_content">Educational Content</span></div>
+            </div>
+          </div>
+          <div class="about-cards">
+            <div class="about-card glass-card">
+              <div class="about-card-icon"><i class="fas fa-lightbulb"></i></div>
+              <h3 data-i18n="card_simple_title">Simple Teaching</h3>
+              <p data-i18n="card_simple_desc">Breaking down complex concepts into easy-to-understand lessons</p>
+            </div>
+            <div class="about-card glass-card">
+              <div class="about-card-icon"><i class="fas fa-rocket"></i></div>
+              <h3 data-i18n="card_practical_title">Practical Focus</h3>
+              <p data-i18n="card_practical_desc">Building real projects so students gain hands-on experience</p>
+            </div>
+            <div class="about-card glass-card">
+              <div class="about-card-icon"><i class="fas fa-heart"></i></div>
+              <h3 data-i18n="card_success_title">Student Success</h3>
+              <p data-i18n="card_success_desc">Dedicated to helping every beginner achieve their coding goals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skills_tag">Skills</span>
+          <h2 class="section-title"><span data-i18n="skills_title_1">Technical</span> <span class="gradient-text" data-i18n="skills_title_2">Expertise</span></h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">Technologies and tools I teach and work with daily</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card glass-card" data-skill="html">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h3>HTML</h3>
+            <p data-i18n="skill_html">Semantic markup & structure</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 95%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="css">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h3>CSS</h3>
+            <p data-i18n="skill_css">Modern styling & animations</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 92%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="js">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <p data-i18n="skill_js">Interactive web experiences</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="bootstrap">
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+            <h3>Bootstrap</h3>
+            <p data-i18n="skill_bootstrap">Rapid responsive layouts</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="responsive">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 data-i18n="skill_responsive_title">Responsive Design</h3>
+            <p data-i18n="skill_responsive">Mobile-first approach</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 94%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="git">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h3>Git & GitHub</h3>
+            <p data-i18n="skill_git">Version control & collaboration</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="ui">
+            <div class="skill-icon"><i class="fas fa-palette"></i></div>
+            <h3 data-i18n="skill_ui_title">UI Development</h3>
+            <p data-i18n="skill_ui">Clean & modern interfaces</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+          </div>
+          <div class="skill-card glass-card" data-skill="web">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3 data-i18n="skill_web_title">Web Development</h3>
+            <p data-i18n="skill_web">Full front-end solutions</p>
+            <div class="skill-bar"><div class="skill-progress" style="--progress: 91%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="services_tag">Services</span>
+          <h2 class="section-title"><span data-i18n="services_title_1">What I</span> <span class="gradient-text" data-i18n="services_title_2">Offer</span></h2>
+          <p class="section-subtitle" data-i18n="services_subtitle">Professional training and development services tailored to your goals</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card glass-card">
+            <div class="service-number">01</div>
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 data-i18n="svc1_title">Programming Training</h3>
+            <p data-i18n="svc1_desc">Comprehensive programming courses designed for beginners. Learn core concepts with clear explanations and practical exercises.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="svc1_f1">Beginner-friendly approach</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc1_f2">Hands-on practice</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc1_f3">Real-world examples</span></li>
+            </ul>
+          </div>
+          <div class="service-card glass-card">
+            <div class="service-number">02</div>
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <h3 data-i18n="svc2_title">Web Development Training</h3>
+            <p data-i18n="svc2_desc">Master modern web development from HTML & CSS fundamentals to building complete, responsive websites.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="svc2_f1">Full project-based learning</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc2_f2">Responsive design focus</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc2_f3">Best practices</span></li>
+            </ul>
+          </div>
+          <div class="service-card glass-card">
+            <div class="service-number">03</div>
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 data-i18n="svc3_title">Front-End Development</h3>
+            <p data-i18n="svc3_desc">Professional front-end development services. Clean code, modern UI, and optimized performance for your web projects.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="svc3_f1">Modern UI/UX</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc3_f2">Clean & maintainable code</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc3_f3">Performance optimized</span></li>
+            </ul>
+          </div>
+          <div class="service-card glass-card">
+            <div class="service-number">04</div>
+            <div class="service-icon"><i class="fas fa-user"></i></div>
+            <h3 data-i18n="svc4_title">Personal Portfolio Websites</h3>
+            <p data-i18n="svc4_desc">Stand out with a stunning personal portfolio. Showcase your skills, projects, and personality with a premium design.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="svc4_f1">Custom unique design</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc4_f2">Fully responsive</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc4_f3">SEO optimized</span></li>
+            </ul>
+          </div>
+          <div class="service-card glass-card">
+            <div class="service-number">05</div>
+            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+            <h3 data-i18n="svc5_title">Business Websites</h3>
+            <p data-i18n="svc5_desc">Professional websites for businesses and startups. Convert visitors into customers with clean, conversion-focused design.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="svc5_f1">Brand-aligned design</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc5_f2">Contact & inquiry forms</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc5_f3">Fast loading</span></li>
+            </ul>
+          </div>
+          <div class="service-card glass-card">
+            <div class="service-number">06</div>
+            <div class="service-icon"><i class="fas fa-comments"></i></div>
+            <h3 data-i18n="svc6_title">Programming Consultation</h3>
+            <p data-i18n="svc6_desc">Get expert guidance on your learning path, project structure, code reviews, or career advice in web development.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="svc6_f1">Personalized advice</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc6_f2">Code review sessions</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="svc6_f3">Career guidance</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects_tag">Projects</span>
+          <h2 class="section-title"><span data-i18n="projects_title_1">Featured</span> <span class="gradient-text" data-i18n="projects_title_2">Work</span></h2>
+          <p class="section-subtitle" data-i18n="projects_subtitle">A selection of projects showcasing teaching materials and web solutions</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <div class="project-placeholder"><i class="fas fa-laptop-code"></i></div>
+              <div class="project-overlay"><a href="#" class="project-link-btn" data-i18n="btn_view_project">View Project</a></div>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj1_title">Interactive HTML/CSS Course Platform</h3>
+              <p data-i18n="proj1_desc">Educational platform with interactive lessons, live previews, and progress tracking for web development beginners.</p>
+              <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <a href="#" class="project-btn"><span data-i18n="btn_view_project">View Project</span> <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <div class="project-placeholder"><i class="fas fa-store"></i></div>
+              <div class="project-overlay"><a href="#" class="project-link-btn" data-i18n="btn_view_project">View Project</a></div>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj2_title">Business Landing Page Template</h3>
+              <p data-i18n="proj2_desc">Modern, high-converting landing page template for startups and small businesses with smooth animations.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+              <a href="#" class="project-btn"><span data-i18n="btn_view_project">View Project</span> <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <div class="project-placeholder"><i class="fas fa-user-tie"></i></div>
+              <div class="project-overlay"><a href="#" class="project-link-btn" data-i18n="btn_view_project">View Project</a></div>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj3_title">Personal Portfolio Series</h3>
+              <p data-i18n="proj3_desc">Collection of premium personal portfolio websites built for professionals and freelancers across different industries.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+              <a href="#" class="project-btn"><span data-i18n="btn_view_project">View Project</span> <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="project-card glass-card">
+            <div class="project-image">
+              <div class="project-placeholder"><i class="fas fa-graduation-cap"></i></div>
+              <div class="project-overlay"><a href="#" class="project-link-btn" data-i18n="btn_view_project">View Project</a></div>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj4_title">JavaScript Fundamentals Toolkit</h3>
+              <p data-i18n="proj4_desc">Interactive exercises and mini-projects designed to teach JavaScript core concepts through practical coding challenges.</p>
+              <div class="project-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+              <a href="#" class="project-btn"><span data-i18n="btn_view_project">View Project</span> <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="exp_tag">Experience</span>
+          <h2 class="section-title"><span data-i18n="exp_title_1">Impact &</span> <span class="gradient-text" data-i18n="exp_title_2">Achievements</span></h2>
+          <p class="section-subtitle" data-i18n="exp_subtitle">Dedicated to empowering the next generation of developers</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label" data-i18n="stat1_label">Training Sessions</div>
+            <p data-i18n="stat1_desc">Programming & Web Development Training</p>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-book"></i></div>
+            <div class="stat-number" data-target="20">0</div>
+            <div class="stat-label" data-i18n="stat2_label">Courses Delivered</div>
+            <p data-i18n="stat2_desc">Programming Courses Delivered</p>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-number" data-target="300">0</div>
+            <div class="stat-label" data-i18n="stat3_label">Trainees</div>
+            <p data-i18n="stat3_desc">Trainees Successfully Trained</p>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label" data-i18n="stat4_label">Years Experience</div>
+            <p data-i18n="stat4_desc">Training & Teaching Experience</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="tl1_date">Ongoing</span>
+              <h3 data-i18n="tl1_title">Programming & Web Development Instructor</h3>
+              <p data-i18n="tl1_desc">Delivering practical programming training focused on HTML, CSS, JavaScript, and modern front-end development. Helping beginners build real websites from scratch.</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="tl2_date">Certification</span>
+              <h3 data-i18n="tl2_title">T.O.T. Certification</h3>
+              <p data-i18n="tl2_desc">Training of Trainers certification, equipping me with advanced methodologies to deliver high-quality educational experiences and train other instructors.</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="tl3_date">Expertise</span>
+              <h3 data-i18n="tl3_title">Front-End Development Focus</h3>
+              <p data-i18n="tl3_desc">Specialized in teaching and building modern, responsive, and accessible front-end interfaces using current industry best practices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="test_tag">Testimonials</span>
+          <h2 class="section-title"><span data-i18n="test_title_1">What Trainees</span> <span class="gradient-text" data-i18n="test_title_2">Say</span></h2>
+          <p class="section-subtitle" data-i18n="test_subtitle">Feedback from students who learned with me</p>
+          <button type="button" class="btn btn-secondary btn-add-review" id="open-review">
+            <i class="fas fa-star"></i>
+            <span data-i18n="btn_add_review">Add Your Review</span>
+          </button>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid">
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text" data-i18n="test1_text">"Osman explains programming concepts in a very simple and clear way. I went from knowing nothing about HTML and CSS to building my own responsive website in just a few weeks."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info"><h4 data-i18n="test1_name">Ahmed Hassan</h4><span data-i18n="test1_role">Web Development Trainee</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text" data-i18n="test2_text">"The practical approach made all the difference. Instead of just theory, we built real projects. Osman is patient and always ready to help until you fully understand."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div class="author-info"><h4 data-i18n="test2_name">Sara Mohamed</h4><span data-i18n="test2_role">Front-End Student</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text" data-i18n="test3_text">"Best programming instructor I've had. He makes complex topics feel easy and keeps the sessions engaging. Highly recommend for anyone starting their coding journey."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info"><h4 data-i18n="test3_name">Mahmoud Ali</h4><span data-i18n="test3_role">Programming Beginner</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact_tag">Contact</span>
+          <h2 class="section-title"><span data-i18n="contact_title_1">Let's</span> <span class="gradient-text" data-i18n="contact_title_2">Connect</span></h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">Ready to start learning or need a website? Reach out anytime</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card glass-card">
+              <div class="contact-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-details">
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/201032299708" target="_blank" rel="noopener noreferrer">01032299708</a>
+              </div>
+            </div>
+            <div class="contact-card glass-card">
+              <div class="contact-icon email"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:osmanmohamedabdelgawad@gmail.com">osmanmohamedabdelgawad@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h3 data-i18n="follow_me">Follow Me</h3>
+              <div class="social-links-large">
+                <a href="https://wa.me/201032299708" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/thmanmhmdbdaljwad" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/osman-mohammed-450b14393/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/osman_mohammed666?igsi=Y3l5eTYzMzhiZDQy" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:123asmana@gmail.com" class="social-btn email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form glass-card" id="contact-form">
+            <div class="form-group">
+              <label for="name" data-i18n="form_name">Your Name</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Enter your name" required autocomplete="name" enterkeyhint="next" />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form_email">Your Email</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="form_email_ph" placeholder="Enter your email" required autocomplete="email" inputmode="email" enterkeyhint="next" />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form_message">Your Message</label>
+              <textarea id="message" name="message" rows="5" data-i18n-placeholder="form_message_ph" placeholder="How can I help you?" required enterkeyhint="send"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span data-i18n="form_send">Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo"><img class="osman" src="image.png" alt="OM"></a>
+          <h3>Osman Mohamed Abdel-Gawad</h3>
+          <p data-i18n="footer_role">Programming & Web Development Instructor</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/201032299708" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/thmanmhmdbdaljwad" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/osman-mohammed-450b14393/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/osman_mohammed666?igsi=Y3l5eTYzMzhiZDQy" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:123asmana@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="copyright">&copy; 2026 Osman Mohamed Abdel-Gawad. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Review Modal -->
+  <div class="modal-overlay" id="review-modal" aria-hidden="true">
+    <div class="modal-dialog glass-card" role="dialog" aria-modal="true" aria-labelledby="review-title">
+      <button type="button" class="modal-close" id="close-review" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-star"></i></div>
+        <h2 id="review-title" data-i18n="review_title">Add Your Review</h2>
+        <p data-i18n="review_subtitle">Share your experience with others</p>
+      </div>
+      <form id="review-form" class="booking-form" novalidate>
+        <div class="form-group">
+          <label for="review-name" data-i18n="review_name">Your Name</label>
+          <input type="text" id="review-name" name="name" data-i18n-placeholder="review_name_ph" placeholder="Enter your name" required maxlength="40" autocomplete="name" enterkeyhint="next" />
+        </div>
+        <div class="form-group">
+          <label for="review-role" data-i18n="review_role">Your Role (optional)</label>
+          <input type="text" id="review-role" name="role" data-i18n-placeholder="review_role_ph" placeholder="e.g. Web Development Trainee" maxlength="50" enterkeyhint="next" />
+        </div>
+        <div class="form-group">
+          <label data-i18n="review_rating">Your Rating</label>
+          <div class="star-rating" id="star-rating" role="radiogroup">
+            <button type="button" class="star-btn active" data-value="1" aria-label="1"><i class="fas fa-star"></i></button>
+            <button type="button" class="star-btn active" data-value="2" aria-label="2"><i class="fas fa-star"></i></button>
+            <button type="button" class="star-btn active" data-value="3" aria-label="3"><i class="fas fa-star"></i></button>
+            <button type="button" class="star-btn active" data-value="4" aria-label="4"><i class="fas fa-star"></i></button>
+            <button type="button" class="star-btn active" data-value="5" aria-label="5"><i class="fas fa-star"></i></button>
+          </div>
+          <input type="hidden" id="review-stars" value="5" />
+        </div>
+        <div class="form-group">
+          <label for="review-text" data-i18n="review_text">Your Review</label>
+          <textarea id="review-text" name="text" rows="4" data-i18n-placeholder="review_text_ph" placeholder="Write your review..." required maxlength="400" enterkeyhint="send"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fas fa-paper-plane"></i>
+          <span data-i18n="review_send">Submit Review</span>
+        </button>
+      </form>
+      <div class="review-thanks" id="review-thanks" hidden>
+        <div class="thanks-emoji">😊</div>
+        <h3 data-i18n="review_thanks_title">Thank you!</h3>
+        <p data-i18n="review_thanks_msg">Your review has been added successfully. We appreciate your feedback!</p>
+        <button type="button" class="btn btn-primary" id="thanks-close">
+          <span data-i18n="review_thanks_btn">Done</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Course Booking Modal -->
+  <div class="modal-overlay" id="booking-modal" aria-hidden="true">
+    <div class="modal-dialog glass-card" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+      <button type="button" class="modal-close" id="close-booking" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h2 id="booking-title" data-i18n="book_title">Book a Course</h2>
+        <p data-i18n="book_subtitle">Fill the form and send via WhatsApp</p>
+      </div>
+      <form id="booking-form" class="booking-form" novalidate>
+        <div class="form-group">
+          <label for="book-name" data-i18n="book_name">Full Name</label>
+          <input type="text" id="book-name" name="name" data-i18n-placeholder="book_name_ph" placeholder="Enter your full name" required autocomplete="name" enterkeyhint="next" />
+        </div>
+        <div class="form-group">
+          <label for="book-phone" data-i18n="book_phone">Phone Number</label>
+          <input type="tel" id="book-phone" name="phone" data-i18n-placeholder="book_phone_ph" placeholder="01xxxxxxxxx" required inputmode="tel" autocomplete="tel" enterkeyhint="next" />
+        </div>
+        <div class="form-group">
+          <label data-i18n="book_courses">Choose Course(s)</label>
+          <div class="course-options">
+            <label class="course-check">
+              <input type="checkbox" name="courses" value="HTML" />
+              <span>HTML</span>
+            </label>
+            <label class="course-check">
+              <input type="checkbox" name="courses" value="CSS" />
+              <span>CSS</span>
+            </label>
+            <label class="course-check">
+              <input type="checkbox" name="courses" value="JavaScript" />
+              <span>JavaScript</span>
+            </label>
+            <label class="course-check">
+              <input type="checkbox" name="courses" value="Bootstrap" />
+              <span>Bootstrap</span>
+            </label>
+            <label class="course-check course-check-all">
+              <input type="checkbox" id="course-all" name="courses" value="All Courses" />
+              <span data-i18n="book_all">All Courses</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="book-gov" data-i18n="book_gov">Governorate / Address</label>
+          <input type="text" id="book-gov" name="gov" data-i18n-placeholder="book_gov_ph" placeholder="Governorate or address" required autocomplete="address-level1" enterkeyhint="next" />
+        </div>
+        <div class="form-group">
+          <label for="book-notes" data-i18n="book_notes">Notes (optional)</label>
+          <textarea id="book-notes" name="notes" rows="3" data-i18n-placeholder="book_notes_ph" placeholder="Any extra details..." enterkeyhint="send"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full btn-whatsapp-send">
+          <i class="fab fa-whatsapp"></i>
+          <span data-i18n="book_send">Send via WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
